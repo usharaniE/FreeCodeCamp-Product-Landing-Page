@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #eee;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+#header {
+    background-color: #eee;
+    position: sticky;
+    top: 0;
+    display: flex;
+    padding: 20px;
+}
+
+#nav-bar {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.nav-link {
+    margin-right: 60px;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 70px;
+}
+
+#form > * {
+    margin-bottom: 10px;
+}
+
+#email {
+    padding: 5px;
+    width: 21%;
+}
+
+#submit {
+    padding: 5px;
+    border: none;
+    background-color: #f1c40f;
+    font-weight: 900;
+    cursor: pointer;
+    font-size: 1em;
+    text-transform: uppercase;
+    transition: 2s;
+}
+
+#submit:hover {
+    background-color: #ff9900;
+}
+
+#features {
+    width: 67%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#features .features {
+    display: flex;
+    flex-direction: row;
+}
+
+.features {
+    margin-bottom: 40px;
+}
+
+#video-container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 560px;
+}
+
+iframe {
+    border: none;
+}
+
+#pricing {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.prices {
+    width: 25%;
+    border: 1px solid #000;
+    border-radius: 3px;
+    text-align: center;
+    margin: 10px;
+}
+
+.prices > * {
+    margin-bottom: 15px;
+}
+
+.prices > h3 {
+    background-color: #ddd;
+    text-transform: uppercase;
+    padding: 15px 0px;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.prices > button {
+    background-color: #f1c40f;
+    border: none;
+    border-radius: 2px;
+    padding: 10px 20px;
+    margin: 15px 0px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: 2s;
+}
+
+.prices > button:hover {
+    background-color: #ff9900;
+}
+
+#footer {
+    background-color: #ddd;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 20px;
+    width: 80%;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#footer a {
+    margin-right: 10px;
+}
+
+#footer div {
+    margin-bottom: 10px;
+}
+
+#footer p {
+    color: #444;
+}
+
+@media (max-width: 800px) {
+    #pricing {
+        display: flex;
+        flex-direction: column;
+    }
+}
